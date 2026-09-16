@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0
       - name: Download and verify exact archive
         run: |
-          curl --fail --location --output /tmp/chunks.tar.gz 'https://temp.sh/qFPQf/htc-p005-p021.tar.gz'
+          curl --fail --location --output /tmp/chunks.tar.gz 'https://n.uguu.se/WXkHxkeH.tar.gz'
           echo 'b3b4912298a5cf40d9f85c6418714eff2dcd224e256df0eaa66b10a41a1b2493  /tmp/chunks.tar.gz' | sha256sum --check --strict
           tar -xzf /tmp/chunks.tar.gz
       - name: Commit every chunk separately
